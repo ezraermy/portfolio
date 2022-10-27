@@ -1,13 +1,5 @@
 
 # Portfolio
-
-    This is a pull request. I:
-    - created branches with different base branches.
-    - Followed GitHub flow.
-    - Added a descriptive and easy to understand README
-    - Added a HTML file
-    - Added a CSS File
-
 ## Built With
 
    * HTML
