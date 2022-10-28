@@ -13,6 +13,9 @@ section {
   width: 375px;
   height: 718px;
   background: #fff;
+  background-image: url(images/backgound_image.svg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
 }
 
 #navbar {
