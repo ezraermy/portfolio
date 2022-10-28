@@ -160,7 +160,7 @@ section {
   height: 40px;
   border-width: 1px;
   border-color: #396df2;
-  border-radius: 4px;
+  border-radius: 0.5em;
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
@@ -171,6 +171,7 @@ section {
   text-align: center;
   letter-spacing: 0.04em;
   color: #396df2;
+  background: #fff;
 }
 
 .about-myself {
@@ -216,7 +217,7 @@ section {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin-top: 1px
+  margin-top: 1px;
 }
 
 .links {
@@ -245,7 +246,7 @@ section {
 }
 
 .resume {
-  width: 138px;
+  width: 130px;
   height: 44px;
   font-style: normal;
   font-weight: 500;
@@ -255,8 +256,11 @@ section {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  border-width: 1px;
+  border-color: #396df2;
   color: #396df2;
   border-radius: 0.5em;
+  background: #fff;
 }
 
 .languages {
@@ -281,25 +285,12 @@ section {
   padding-left: 4px;
 }
 
-.line {
-  /* Separator Bottom */
-
-position: absolute;
-height: 1px;
-left: 0px;
-right: 0px;
-bottom: 0px;
-
-/* Neutrals/N40 */
-background: #DFE1E6;
-}
-
 hr {
   border: 0;
-  clear:both;
-  display:block;
-  width: 280px;               
-  background-color:#dfe1e6;
+  clear: both;
+  display: block;
+  width: 280px;
+  background-color: #dfe1e6;
   height: 1px;
   margin: 6px;
 }
@@ -308,13 +299,12 @@ hr {
   height: 24px;
   left: 12px;
   right: 78px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
-
