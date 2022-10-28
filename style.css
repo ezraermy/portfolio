@@ -105,6 +105,7 @@ section {
   width: 29px;
   height: 16px;
   display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0 2px;
   margin: 1px;
@@ -163,26 +164,23 @@ section {
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-#about-myself {
+.about-myself {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: no-repeat;
   padding: 16px;
   margin: 20px;
   width: 327px;
-  height: 552px;
+  height: 1000px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -204,11 +202,12 @@ section {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 1px;
 }
 
 .about-myself-content {
   width: 280px;
-  height: 144px;
+  height: 120px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -217,6 +216,7 @@ section {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-top: 1px
 }
 
 .links {
@@ -225,16 +225,17 @@ section {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-bottom: 1px;
 }
 
 .socials {
   display: flex;
   list-style: none;
-  padding: 0 12px;
+  padding: 0 1px;
 }
 
 .socials li {
-  padding-left: 8px;
+  padding-left: 16px;
 }
 
 .socials a {
@@ -242,3 +243,78 @@ section {
   font-size: 22px;
   color: #505f79;
 }
+
+.resume {
+  width: 138px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border-radius: 0.5em;
+}
+
+.languages {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  top: calc(50% - 24px / 2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding-top: 5px;
+}
+
+.skills {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding-left: 4px;
+}
+
+.line {
+  /* Separator Bottom */
+
+position: absolute;
+height: 1px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+/* Neutrals/N40 */
+background: #DFE1E6;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 280px;               
+  background-color:#dfe1e6;
+  height: 1px;
+  margin: 6px;
+}
+
+.frameworks {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  top: calc(50% - 24px/2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
