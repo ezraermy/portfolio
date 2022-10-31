@@ -308,3 +308,7 @@ hr {
   align-items: center;
   color: #000;
 }
+
+.taggs {
+  float: right;
+}
