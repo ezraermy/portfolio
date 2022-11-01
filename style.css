@@ -9,69 +9,58 @@ body {
   background: #e5e5e5;
 }
 
-section {
-  display: grid;
-}
-
 #main-page {
-  width: 375px;
-  height: 718px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #fff;
   background-image: url(images/backgound_image.svg);
   background-repeat: no-repeat;
-  background-position-y: 50%;
-  margin: 20px;
+  background-position: -20px 80px;
+  margin-bottom: 10px;
+  padding: 40px 24px;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 58px 24px;
+  padding: 0 15px;
 }
 
 .my-logo {
-  width: 76px;
-  height: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+
+.headline {
+  padding: 0 24px;
+  margin-top: 6rem;
 }
 
 .title {
-  width: 327px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  padding: 0 24px;
   color: #172b4d;
-  display: flex;
-  align-items: center;
+
+  /* display: flex; */
+
+  /* align-items: center; */
 }
 
 .content {
-  width: 327px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 0 24px;
   color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .cover-links {
-  padding: 0 24px;
   margin-bottom: 10px;
   color: #7f8cff;
   height: 24px;
@@ -84,12 +73,9 @@ section {
 .cover-socials {
   display: flex;
   list-style: none;
+  justify-content: flex-start;
+  gap: 10px;
   padding: 0;
-  margin-left: 6px;
-}
-
-.cover-socials li {
-  padding-left: 14px;
 }
 
 .cover-socials a {
@@ -102,8 +88,8 @@ section {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: no-repeat;
-  padding: 16px;
-  margin: 20px;
+  padding: 8px;
+  margin: 10px;
   width: 327px;
   height: 552px;
   background: #fff;
@@ -214,6 +200,7 @@ section {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-top: 10px;
 }
 
 .about-myself-title {
@@ -321,21 +308,6 @@ hr {
   margin: 6px;
 }
 
-.frameworks {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  top: calc(50% - 24px / 2);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #000;
-  margin: 10px;
-}
-
 div .taggs {
   float: right;
   width: 40px;
@@ -369,4 +341,85 @@ div .taggs {
   border: none;
   border-radius: 6px;
   color: #396df2;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 38px 0 10px;
+}
+
+.contact {
+  width: 100%;
+  background: #6070ff;
+  background-image: url(images/contact/layers.svg);
+  background-repeat: no-repeat;
+  background-position-x: 145px;
+  background-position-y: 10px;
+  border-top-left-radius: 6rem;
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.contact-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #ebebff;
+  padding: 0 24px;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+  gap: 1rem;
+}
+
+.inputField {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.textareaField {
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #b3bac5;
+}
+
+.my-button {
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  color: #6070ff;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.shape {
+  margin-left: 30%;
+  background: #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
 }
