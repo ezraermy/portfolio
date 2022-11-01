@@ -350,11 +350,11 @@ div .taggs {
 }
 
 .contact {
-  width: 98%;
+  width: 100%;
   background: #6070ff;
   background-image: url(images/contact/layers.svg);
   background-repeat: no-repeat;
-  background-position-x: 135px;
+  background-position-x: 145px;
   background-position-y: 10px;
   border-top-left-radius: 6rem;
 }
@@ -414,4 +414,12 @@ div .taggs {
   border: none;
   font-size: 17px;
   font-weight: 500;
+}
+
+.shape {
+  margin-left: 30%;
+  background: #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
 }
