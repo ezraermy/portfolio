@@ -47,7 +47,6 @@ section {
 
 .title {
   width: 327px;
-  height: 150px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -60,7 +59,6 @@ section {
 
 .content {
   width: 327px;
-  height: 146px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -70,6 +68,34 @@ section {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.cover-links {
+  padding: 0 24px;
+  margin-bottom: 10px;
+  color: #7f8cff;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cover-socials {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 6px;
+}
+
+.cover-socials li {
+  padding-left: 14px;
+}
+
+.cover-socials a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
 }
 
 .work-page {
@@ -307,8 +333,40 @@ hr {
   display: flex;
   align-items: center;
   color: #000;
+  margin: 10px;
 }
 
-.taggs {
+div .taggs {
   float: right;
+  width: 40px;
+  height: 20px;
+  padding-bottom: 20px;
+}
+
+.tag1 {
+  width: 50px;
+  height: 20px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #396df2;
+}
+
+.tag2 {
+  width: 40px;
+  height: 20px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  color: #396df2;
+}
+
+.tag3 {
+  width: 80px;
+  height: 20px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  color: #396df2;
 }
