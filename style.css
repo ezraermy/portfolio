@@ -401,7 +401,7 @@ padding: 0 24px;
   gap: 1rem;
 }
 
-.input-field {
+.inputField {
   padding: 0.9rem;
   border-radius: 10px;
   border: none;
@@ -411,7 +411,7 @@ padding: 0 24px;
   line-height: 20px;
 }
 
-.textarea {
+.textareaField {
   border-radius: 10px;
   padding: 0.9rem;
   font-style: normal;
@@ -421,10 +421,6 @@ padding: 0 24px;
 }
 
 .my-button {
-  /* Normal Button/Primary/Enabled */
-
-/* Auto layout */
-
 align-items: center;
 padding: 12px 16px;
 /* Neutrals/N0 */
