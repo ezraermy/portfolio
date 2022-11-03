@@ -17,7 +17,7 @@ body {
   background-image: url(images/backgound_image.svg);
   background-repeat: no-repeat;
   background-position: -20px 80px;
-  margin-bottom: 10px;
+  margin-bottom: 4rem;
   padding: 40px 24px;
 }
 
@@ -152,12 +152,11 @@ body {
   letter-spacing: 0.04em;
   color: #396df2;
   background: #fff;
-  cursor: pointer;
 }
 
 .project-detail:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: #396df2;
+  color: #fff;
 }
 
 .about-myself {
@@ -239,8 +238,8 @@ body {
 }
 
 .resume:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: #396df2;
+  color: #fff;
 }
 
 .languages {
@@ -270,7 +269,8 @@ hr {
   border: 0;
   clear: both;
   display: block;
-  width: 280px;
+
+  /* width: 280px; */
   background-color: #dfe1e6;
   height: 1px;
   margin: 6px;
@@ -320,6 +320,7 @@ div .taggs {
 
 .contact {
   width: 100%;
+  height: 740px;
   background: #6070ff;
   background-image: url(images/contact/layers.svg);
   background-repeat: no-repeat;
@@ -350,7 +351,7 @@ div .taggs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 2.5rem;
   gap: 1.5rem;
 }
 
@@ -384,11 +385,6 @@ div .taggs {
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
-}
-
-.my-button:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .shape {
@@ -445,7 +441,7 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    margin: 1rem 0;
+    margin: 4rem 0;
     gap: 2rem;
   }
 
@@ -521,6 +517,7 @@ div .taggs {
     background: #fff;
     padding: 5rem;
     border-top-right-radius: 6rem;
+    margin: 4rem 0 0 0;
   }
 
   .about-myself-content {
@@ -572,6 +569,10 @@ div .taggs {
     background-size: contain;
   }
 
+  .my-form {
+    padding: 0;
+  }
+
   .footer-content {
     width: 447px;
   }
@@ -586,12 +587,6 @@ div .taggs {
     border: none;
     font-size: 17px;
     font-weight: 500;
-    cursor: pointer;
-  }
-
-  .my-button:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
 
   .shape {
