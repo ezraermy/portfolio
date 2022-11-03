@@ -51,10 +51,6 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-
-  /* display: flex; */
-
-  /* align-items: center; */
 }
 
 .content {
@@ -89,7 +85,8 @@ body {
   color: #505f79;
 }
 
-.work-page-left, .work-page-right {
+.work-page-left,
+.work-page-right {
   box-sizing: border-box;
   padding: 8px;
   margin: 10px;
@@ -159,11 +156,8 @@ body {
 
 .about-myself {
   box-sizing: border-box;
-  /* display: grid; */
   padding: 16px;
   margin: 20px;
-  /* width: 327px;
-  height: 1000px; */
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -187,14 +181,11 @@ body {
 }
 
 .myself-content {
-  /* width: 280px;
-  height: 120px; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-top: 1px;
 }
 
 .links {
@@ -312,6 +303,7 @@ div .taggs {
   display: flex;
   justify-content: space-between;
   padding: 0 38px 0 10px;
+  margin: 1em;
 }
 
 .contact {
@@ -371,7 +363,7 @@ div .taggs {
 
 .my-button {
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px;
   background: #fff;
   border-radius: 8px;
   color: #6070ff;
@@ -389,7 +381,7 @@ div .taggs {
   height: 5px;
 }
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #main-page {
     display: flex;
     flex-direction: column;
@@ -397,7 +389,6 @@ div .taggs {
     background: #fff;
     background-image: url(images/desktop_main/Header.svg);
     background-repeat: no-repeat;
-   
   }
 
   #navbar {
@@ -429,65 +420,31 @@ div .taggs {
   }
 
   .work-page-left {
-    display: flex;
-    flex-direction: row-reverse;
-    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background: #fff;
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    margin: 2rem 0;
-  }
-
-  .work-page-right {
-    display: flex;
-    flex-direction: row;
-    background: #FFFFFF;
-    border: none;
-    border-radius: 24px;
-    padding: 2rem;
-  }
-
-
-  .card1-image {
-    width: 50%;
-    float: left;
-    padding: 24px 40px 24px 24px;
-  }
-
-  .card1-content {
-    width: 50%;
-    float: right;
-    margin-bottom: 40px;
-    padding-right: 46px;
-
-  }
-  .card2-image {
-    width: 50%;
-    float: right;
-    padding: 24px 40px 24px 24px;
-    
+    margin: 1rem 0;
+    gap: 1rem;
   }
 
   .card2-content {
-    width: 50%;
-    float: left;
-    margin-bottom: 40px;
-    padding-right: 46px;
-
+    grid-row: 1/-2;
+    padding: 0;
   }
 
-  .card3-image {
-    width: 50%;
-    float: left;
-    padding: 24px 40px 24px 24px;
-  }
-
-  .card3-content {
-    width: 50%;
-    float: right;
-    margin-bottom: 40px;
-    padding-right: 46px;
-
+  .work-page-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+    gap: 1.5rem;
   }
 
   .clients {
@@ -509,7 +466,7 @@ div .taggs {
     height: 20px;
     padding-bottom: 20px;
   }
-  
+
   .tag1 {
     width: 50px;
     height: 20px;
@@ -519,7 +476,7 @@ div .taggs {
     margin-bottom: 20px;
     color: #396df2;
   }
-  
+
   .tag2 {
     width: 40px;
     height: 20px;
@@ -528,7 +485,7 @@ div .taggs {
     border-radius: 6px;
     color: #396df2;
   }
-  
+
   .tag3 {
     width: 80px;
     height: 20px;
@@ -543,10 +500,9 @@ div .taggs {
     height: 496px;
     display: flex;
     align-items: center;
-    background: #FFFFFF;
+    background: #fff;
     padding: 5rem;
     border-top-right-radius: 6rem;
-
   }
 
   .about-myself-content {
@@ -563,7 +519,7 @@ div .taggs {
   .about-myself-title {
     padding: 1rem 0;
   }
-  
+
   .frameworks {
     display: flex;
     padding: 0.5rem 0;
@@ -575,19 +531,20 @@ div .taggs {
     font-size: 20px;
     line-height: 24px;
   }
+
   .framework-skills-desktop {
     display: flex;
   }
-  .html-skill, .css-skill {
+
+  .html-skill,
+  .css-skill {
     margin-right: 1rem;
   }
 
-  .framework-skills  {
+  .framework-skills {
     display: none;
   }
 
-
-  
   .contact {
     display: flex;
     justify-content: center;
@@ -595,16 +552,25 @@ div .taggs {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-  
   }
+
   .footer-content {
     width: 30%;
   }
 
   .my-button {
-    display: flex;
-    align-self: center;
+    margin: auto;
+    padding: 12px;
+    background: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    width: 50%;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
   }
 
-
+  .shape {
+    display: none;
+  }
 }
