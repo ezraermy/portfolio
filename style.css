@@ -152,6 +152,12 @@ body {
   letter-spacing: 0.04em;
   color: #396df2;
   background: #fff;
+  cursor: pointer;
+}
+
+.project-detail:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .about-myself {
@@ -229,6 +235,12 @@ body {
   color: #396df2;
   border-radius: 0.5em;
   background: #fff;
+  cursor: pointer;
+}
+
+.resume:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .languages {
@@ -338,8 +350,8 @@ div .taggs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.5rem;
-  gap: 1rem;
+  padding: 1.5rem;
+  gap: 1.5rem;
 }
 
 .inputField {
@@ -371,6 +383,12 @@ div .taggs {
   border: none;
   font-size: 17px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .shape {
@@ -428,7 +446,7 @@ div .taggs {
     border-radius: 24px;
     padding: 2rem;
     margin: 1rem 0;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .card2-content {
@@ -444,7 +462,7 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .clients {
@@ -555,7 +573,7 @@ div .taggs {
   }
 
   .footer-content {
-    width: 30%;
+    width: 447px;
   }
 
   .my-button {
@@ -568,6 +586,12 @@ div .taggs {
     border: none;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
+  }
+
+  .my-button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
 
   .shape {
