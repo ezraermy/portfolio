@@ -34,10 +34,19 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation: logoAnimate 2s alternate-reverse 3s 5;
 }
 
-.my-logo:hover {
-  animation: logoAnimate 2s alternate infinite;
+.cover-socials a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
 }
 
 @keyframes logoAnimate {
@@ -45,8 +54,17 @@ body {
   to { transform: rotate(360deg) scale(0.7); }
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .navbar-menu {
   display: none;
+}
+
+#navbar .navbar-menu a:hover {
+  color: #396df2;
+  cursor: pointer;
 }
 
 .headline {
@@ -88,17 +106,11 @@ body {
   padding: 0;
 }
 
-.cover-socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
-}
-
 .work-page-left,
 .work-page-right {
   box-sizing: border-box;
   padding: 8px;
-  margin: 10px;
+  margin: 0 1rem 4rem 1rem;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -175,7 +187,6 @@ body {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-top: 10px;
 }
 
 .about-myself-title {
@@ -192,6 +203,7 @@ body {
   order: 0;
   flex-grow: 0;
   margin-bottom: 1px;
+  padding-left: 2.5rem;
 }
 
 .myself-content {
@@ -200,6 +212,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  padding: 0 3rem 0 2.5rem;
 }
 
 .links {
@@ -209,22 +222,18 @@ body {
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 1px;
+  padding-left: 2.5rem;
 }
 
 .socials {
   display: flex;
   list-style: none;
   padding: 0 1px;
+  margin-left: 1.5rem;
 }
 
 .socials li {
   padding-left: 16px;
-}
-
-.socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
 }
 
 .resume {
@@ -244,6 +253,7 @@ body {
   border-radius: 0.5em;
   background: #fff;
   cursor: pointer;
+  margin-left: 2.5rem;
 }
 
 .resume:hover {
@@ -260,14 +270,15 @@ body {
   display: flex;
   align-items: center;
   color: #000;
-  padding-top: 5px;
+  padding-top: 1rem;
+  padding-left: 2.5rem;
 }
 
 .framework-skills {
   display: flex;
   list-style: none;
   flex-direction: column;
-  padding-left: 4px;
+  padding: 0 2.5rem;
 }
 
 .framework-skills-desktop {
@@ -323,7 +334,7 @@ div .taggs {
 .frameworks {
   display: flex;
   justify-content: space-between;
-  padding: 0 38px 0 10px;
+  padding: 0 2.5rem;
   margin: 1em;
 }
 
@@ -336,6 +347,7 @@ div .taggs {
   background-position-x: 145px;
   background-position-y: 10px;
   border-top-left-radius: 6rem;
+  padding-bottom: 4rem;
 }
 
 .contact-title {
@@ -345,6 +357,7 @@ div .taggs {
   text-align: center;
   color: #fff;
   margin-top: 80px;
+  padding-top: 5rem;
 }
 
 .contact-content {
@@ -353,7 +366,7 @@ div .taggs {
   font-size: 18px;
   text-align: center;
   color: #ebebff;
-  padding: 0 24px;
+  padding: 0 2rem;
 }
 
 .my-form {
@@ -420,6 +433,8 @@ div .taggs {
     background: #fff;
     background-image: url(images/desktop_main/Header.svg);
     background-repeat: no-repeat;
+    background-position: -20px 90px;
+    background-size: 90%;
   }
 
   #navbar {
@@ -558,7 +573,7 @@ div .taggs {
   }
 
   .about-myself-title {
-    padding: 1rem 0;
+    padding: 1rem 2.5rem;
   }
 
   .frameworks {
@@ -619,10 +634,5 @@ div .taggs {
 
   .shape {
     display: none;
-  }
-
-  #navbar .navbar-menu a:hover {
-    color: brown;
-    cursor: pointer;
   }
 }
