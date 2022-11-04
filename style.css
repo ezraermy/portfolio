@@ -36,8 +36,15 @@ body {
   color: #6070ff;
 }
 
-.my-logo:hover {
-  transform: rotate(360deg);
+.my-logo:hover
+{
+  animation: logoAnimate 2s alternate infinite;
+}
+
+@keyframes logoAnimate
+{
+  from {transform: rotate(0) scale(1);}
+  to {transform: rotate(360deg) scale(0.7);}
 }
 
 .navbar-menu {
@@ -466,7 +473,7 @@ div .taggs {
   .card1-image:hover,
   .card2-image:hover,
   .card3-image:hover {
-    transform: scale(1.02);
+    transform: scale(1.07);
   }
 
   .card2-content {
