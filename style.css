@@ -17,7 +17,7 @@ body {
   background-image: url(images/backgound_image.svg);
   background-repeat: no-repeat;
   background-position: -20px 80px;
-  margin-bottom: 10px;
+  margin-bottom: 4rem;
   padding: 40px 24px;
 }
 
@@ -34,6 +34,15 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+}
+
+.my-logo:hover {
+  animation: logoAnimate 2s alternate infinite;
+}
+
+@keyframes logoAnimate {
+  from { transform: rotate(0) scale(1); }
+  to { transform: rotate(360deg) scale(0.7); }
 }
 
 .navbar-menu {
@@ -154,6 +163,11 @@ body {
   background: #fff;
 }
 
+.project-detail:hover {
+  background: #396df2;
+  color: #fff;
+}
+
 .about-myself {
   box-sizing: border-box;
   padding: 16px;
@@ -229,6 +243,12 @@ body {
   color: #396df2;
   border-radius: 0.5em;
   background: #fff;
+  cursor: pointer;
+}
+
+.resume:hover {
+  background: #396df2;
+  color: #fff;
 }
 
 .languages {
@@ -258,7 +278,8 @@ hr {
   border: 0;
   clear: both;
   display: block;
-  width: 280px;
+
+  /* width: 280px; */
   background-color: #dfe1e6;
   height: 1px;
   margin: 6px;
@@ -308,6 +329,7 @@ div .taggs {
 
 .contact {
   width: 100%;
+  height: 740px;
   background: #6070ff;
   background-image: url(images/contact/layers.svg);
   background-repeat: no-repeat;
@@ -339,7 +361,7 @@ div .taggs {
   flex-direction: column;
   justify-content: center;
   padding: 2.5rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .inputField {
@@ -352,6 +374,10 @@ div .taggs {
   line-height: 20px;
 }
 
+.inputField:hover {
+  transform: translate(5px);
+}
+
 .textareaField {
   border-radius: 10px;
   padding: 0.9rem;
@@ -359,6 +385,10 @@ div .taggs {
   font-weight: 400;
   font-size: 15px;
   color: #b3bac5;
+}
+
+.textareaField:hover {
+  transform: translate(5px);
 }
 
 .my-button {
@@ -371,6 +401,7 @@ div .taggs {
   border: none;
   font-size: 17px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .shape {
@@ -427,8 +458,20 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    margin: 1rem 0;
-    gap: 1rem;
+    margin: 4rem 0;
+    gap: 2rem;
+  }
+
+  .card1-image,
+  .card2-image,
+  .card3-image {
+    transition: transform 0.3s;
+  }
+
+  .card1-image:hover,
+  .card2-image:hover,
+  .card3-image:hover {
+    transform: scale(1.07);
   }
 
   .card2-content {
@@ -444,7 +487,7 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .clients {
@@ -496,24 +539,22 @@ div .taggs {
   }
 
   .about-myself {
-    width: 100%;
-    height: 496px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     background: #fff;
-    padding: 5rem;
     border-top-right-radius: 6rem;
+    padding: 0;
+    margin: 4em 0 0 0;
   }
 
   .about-myself-content {
-    width: 50%;
-    float: left;
-    padding-right: 2rem;
+    padding: 3rem 2rem 5rem 4rem;
   }
 
   .about-myself-languages {
-    width: 50%;
-    float: right;
+    padding: 2.5rem 3rem 5rem 0;
+    margin-top: 4rem;
   }
 
   .about-myself-title {
@@ -538,7 +579,7 @@ div .taggs {
 
   .html-skill,
   .css-skill {
-    margin-right: 1rem;
+    margin-right: 0.8rem;
   }
 
   .framework-skills {
@@ -546,6 +587,8 @@ div .taggs {
   }
 
   .contact {
+    width: 100%;
+    grid-column: 1/-1;
     display: flex;
     justify-content: center;
     background-image: url(images/desktop_main/contact_desktop.svg);
@@ -554,8 +597,12 @@ div .taggs {
     background-size: contain;
   }
 
+  .my-form {
+    padding: 0;
+  }
+
   .footer-content {
-    width: 30%;
+    width: 447px;
   }
 
   .my-button {
@@ -572,5 +619,10 @@ div .taggs {
 
   .shape {
     display: none;
+  }
+
+  #navbar .navbar-menu a:hover {
+    color: brown;
+    cursor: pointer;
   }
 }
