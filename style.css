@@ -34,7 +34,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  animation: logoAnimate 2s alternate-reverse 3s 5;
+  animation: logoAnimate 3s alternate-reverse 3s 2;
 }
 
 .cover-socials a {
@@ -51,7 +51,7 @@ body {
 
 @keyframes logoAnimate {
   from { transform: rotate(0) scale(1); }
-  to { transform: rotate(360deg) scale(0.7); }
+  to { transform: rotate(360deg) scale(1.5); }
 }
 
 a:link {
@@ -64,6 +64,7 @@ a:link {
 
 #navbar .navbar-menu a:hover {
   color: #396df2;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -183,7 +184,6 @@ a:link {
 .about-myself {
   box-sizing: border-box;
   padding: 16px;
-  margin: 20px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -289,11 +289,9 @@ hr {
   border: 0;
   clear: both;
   display: block;
-
-  /* width: 280px; */
   background-color: #dfe1e6;
   height: 1px;
-  margin: 6px;
+  margin: 1rem 3rem;
 }
 
 div .taggs {
@@ -450,7 +448,7 @@ div .taggs {
 
   .navbar-menu a {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     text-decoration: none;
@@ -473,7 +471,6 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    margin: 4rem 0;
     gap: 2rem;
   }
 
@@ -560,7 +557,6 @@ div .taggs {
     background: #fff;
     border-top-right-radius: 6rem;
     padding: 0;
-    margin: 4em 0 0 0;
   }
 
   .about-myself-content {
@@ -572,13 +568,17 @@ div .taggs {
     margin-top: 4rem;
   }
 
+  .languages {
+    padding-left: 1rem;
+  }
+
   .about-myself-title {
     padding: 1rem 2.5rem;
   }
 
   .frameworks {
     display: flex;
-    padding: 0.5rem 0;
+    padding: 0.5rem 4rem 0.5rem 0;
   }
 
   .framework1 {
@@ -590,6 +590,10 @@ div .taggs {
 
   .framework-skills-desktop {
     display: flex;
+  }
+
+  hr {
+    margin-left: 1rem;
   }
 
   .html-skill,
