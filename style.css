@@ -34,19 +34,38 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation: logoAnimate 3s alternate-reverse 3s 2;
 }
 
-.my-logo:hover {
-  animation: logoAnimate 2s alternate infinite;
+.cover-socials a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
 }
 
 @keyframes logoAnimate {
   from { transform: rotate(0) scale(1); }
-  to { transform: rotate(360deg) scale(0.7); }
+  to { transform: rotate(360deg) scale(1.5); }
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .navbar-menu {
   display: none;
+}
+
+#navbar .navbar-menu a:hover {
+  color: #396df2;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .headline {
@@ -88,17 +107,11 @@ body {
   padding: 0;
 }
 
-.cover-socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
-}
-
 .work-page-left,
 .work-page-right {
   box-sizing: border-box;
   padding: 8px;
-  margin: 10px;
+  margin: 0 1rem 4rem 1rem;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -171,11 +184,9 @@ body {
 .about-myself {
   box-sizing: border-box;
   padding: 16px;
-  margin: 20px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-top: 10px;
 }
 
 .about-myself-title {
@@ -192,6 +203,7 @@ body {
   order: 0;
   flex-grow: 0;
   margin-bottom: 1px;
+  padding-left: 2.5rem;
 }
 
 .myself-content {
@@ -200,6 +212,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  padding: 0 3rem 0 2.5rem;
 }
 
 .links {
@@ -209,22 +222,18 @@ body {
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 1px;
+  padding-left: 2.5rem;
 }
 
 .socials {
   display: flex;
   list-style: none;
   padding: 0 1px;
+  margin-left: 1.5rem;
 }
 
 .socials li {
   padding-left: 16px;
-}
-
-.socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
 }
 
 .resume {
@@ -244,6 +253,7 @@ body {
   border-radius: 0.5em;
   background: #fff;
   cursor: pointer;
+  margin-left: 2.5rem;
 }
 
 .resume:hover {
@@ -260,14 +270,15 @@ body {
   display: flex;
   align-items: center;
   color: #000;
-  padding-top: 5px;
+  padding-top: 1rem;
+  padding-left: 2.5rem;
 }
 
 .framework-skills {
   display: flex;
   list-style: none;
   flex-direction: column;
-  padding-left: 4px;
+  padding: 0 2.5rem;
 }
 
 .framework-skills-desktop {
@@ -278,11 +289,9 @@ hr {
   border: 0;
   clear: both;
   display: block;
-
-  /* width: 280px; */
   background-color: #dfe1e6;
   height: 1px;
-  margin: 6px;
+  margin: 1rem 3rem;
 }
 
 div .taggs {
@@ -323,7 +332,7 @@ div .taggs {
 .frameworks {
   display: flex;
   justify-content: space-between;
-  padding: 0 38px 0 10px;
+  padding: 0 2.5rem;
   margin: 1em;
 }
 
@@ -336,6 +345,7 @@ div .taggs {
   background-position-x: 145px;
   background-position-y: 10px;
   border-top-left-radius: 6rem;
+  padding-bottom: 4rem;
 }
 
 .contact-title {
@@ -345,6 +355,7 @@ div .taggs {
   text-align: center;
   color: #fff;
   margin-top: 80px;
+  padding-top: 5rem;
 }
 
 .contact-content {
@@ -353,7 +364,7 @@ div .taggs {
   font-size: 18px;
   text-align: center;
   color: #ebebff;
-  padding: 0 24px;
+  padding: 0 2rem;
 }
 
 .my-form {
@@ -420,6 +431,8 @@ div .taggs {
     background: #fff;
     background-image: url(images/desktop_main/Header.svg);
     background-repeat: no-repeat;
+    background-position: -20px 90px;
+    background-size: 90%;
   }
 
   #navbar {
@@ -435,7 +448,7 @@ div .taggs {
 
   .navbar-menu a {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     text-decoration: none;
@@ -458,7 +471,6 @@ div .taggs {
     border: none;
     border-radius: 24px;
     padding: 2rem;
-    margin: 4rem 0;
     gap: 2rem;
   }
 
@@ -545,7 +557,6 @@ div .taggs {
     background: #fff;
     border-top-right-radius: 6rem;
     padding: 0;
-    margin: 4em 0 0 0;
   }
 
   .about-myself-content {
@@ -557,13 +568,17 @@ div .taggs {
     margin-top: 4rem;
   }
 
+  .languages {
+    padding-left: 1rem;
+  }
+
   .about-myself-title {
-    padding: 1rem 0;
+    padding: 1rem 2.5rem;
   }
 
   .frameworks {
     display: flex;
-    padding: 0.5rem 0;
+    padding: 0.5rem 4rem 0.5rem 0;
   }
 
   .framework1 {
@@ -575,6 +590,10 @@ div .taggs {
 
   .framework-skills-desktop {
     display: flex;
+  }
+
+  hr {
+    margin-left: 1rem;
   }
 
   .html-skill,
@@ -619,10 +638,5 @@ div .taggs {
 
   .shape {
     display: none;
-  }
-
-  #navbar .navbar-menu a:hover {
-    color: brown;
-    cursor: pointer;
   }
 }
