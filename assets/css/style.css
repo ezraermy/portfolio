@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background: #fff;
-  background-image: url(images/backgound_image.svg);
+  background-image: url(/images/backgound_image.svg);
   background-repeat: no-repeat;
   background-position: -20px 80px;
   margin-bottom: 4rem;
@@ -340,7 +340,7 @@ div .taggs {
   width: 100%;
   height: 740px;
   background: #6070ff;
-  background-image: url(images/contact/layers.svg);
+  background-image: url(/images/contact/layers.svg);
   background-repeat: no-repeat;
   background-position-x: 145px;
   background-position-y: 10px;
@@ -429,7 +429,7 @@ div .taggs {
     flex-direction: column;
     justify-content: center;
     background: #fff;
-    background-image: url(images/desktop_main/Header.svg);
+    background-image: url(/images/desktop_main/Header.svg);
     background-repeat: no-repeat;
     background-position: -20px 90px;
     background-size: 90%;
@@ -560,7 +560,7 @@ div .taggs {
   }
 
   .about-myself-content {
-    padding: 3rem 2rem 5rem 4rem;
+    padding: 3rem 2rem 5rem 5rem;
   }
 
   .about-myself-languages {
@@ -610,7 +610,7 @@ div .taggs {
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
-    background-image: url(images/desktop_main/contact_desktop.svg);
+    background-image: url(/images/desktop_main/contact_desktop.svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
